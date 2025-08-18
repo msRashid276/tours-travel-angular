@@ -1,7 +1,7 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { HousingLocation } from '../housing-location';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   template: `
     <section>
       <form>
-        <input type="text" placeholder="Filter by city" />
+        <input type="text" placeholder="Filter by city"/>
         <button class="primary" type="button">Search</button>
       </form>
     </section>
@@ -29,7 +29,7 @@ export class HomeComponent {
       name: 'Acme Fresh Start Housing',
       city: 'Chicago',
       state: 'IL',
-      photo: '/assets/bernard-hermant-CLKGGwIBTaY-unsplash.jpg',
+      photo: '/images/dummy.jpg',
       availableUnits: 4,
       wifi: true,
       laundry: true
