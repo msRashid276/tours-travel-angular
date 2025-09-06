@@ -68,6 +68,8 @@ submitApplication() {
   });
   constructor(){
     const housingLocationId = Number(this.route.snapshot.params['id']);
-    this.housingLocation = this.housingService.getAllHousingLocationsById(housingLocationId);
+    this.housingService.getAllHousingLocationsById(housingLocationId).then((housingLocation) => {
+      this.housingLocation = housingLocation;
+    })
   }
 }
