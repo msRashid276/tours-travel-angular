@@ -5,6 +5,10 @@ import { HousingLocation } from './housing-location';
   providedIn: 'root'
 })
 export class HousingService {
+  submitApplication(firstName: string, lastName: string, email: string) {
+    console.log(firstName,lastName,email);
+    
+  }
 
    housingLocationList:HousingLocation[]=[
       {
